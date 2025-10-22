@@ -1,0 +1,44 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║         🌍 TRYING LaBSE - LANGUAGE-AGNOSTIC BERT 🌍          ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+🎯 Why LaBSE?
+
+LaBSE = Language-agnostic BERT Sentence Embedding
+
+✅ Specifically designed for multilingual semantic similarity
+✅ Trained on 109 languages including Hebrew
+✅ Used by Google for cross-lingual search
+✅ Should work with HuggingFace Inference API
+✅ 768-dimensional embeddings
+
+Model: sentence-transformers/LaBSE
+
+═══════════════════════════════════════════════════════════════
+                  🚀 RESTART THE BACKEND
+═══════════════════════════════════════════════════════════════
+
+Press Ctrl+C in your backend terminal, then:
+
+    cd /Users/talben-avi/guess-word/service-repo
+    ./run.sh
+
+═══════════════════════════════════════════════════════════════
+              📊 ABOUT LaBSE
+═══════════════════════════════════════════════════════════════
+
+LaBSE (Language-agnostic BERT Sentence Embedding):
+- Developed by Google Research
+- Trained on parallel text from 109 languages
+- Excellent for cross-lingual semantic similarity
+- Used in production by Google Translate
+
+Perfect for multilingual word games like Semantle!
+
+═══════════════════════════════════════════════════════════════
+
+Let's see if this one works! 🤞
+
+═══════════════════════════════════════════════════════════════

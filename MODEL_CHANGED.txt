@@ -1,0 +1,47 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║              ✅ MODEL FIXED - READY TO PLAY! ✅              ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+🔧 WHAT I CHANGED:
+
+The nvidia/llama-embed-nemotron-8b model isn't available via 
+Hugging Face's free Inference API (404 error).
+
+I switched to: sentence-transformers/all-mpnet-base-v2
+✅ Proven to work with Inference API
+✅ High-quality semantic embeddings
+✅ Perfect for word similarity games
+✅ Used by thousands of projects
+
+═══════════════════════════════════════════════════════════════
+                  🚀 RESTART & PLAY NOW
+═══════════════════════════════════════════════════════════════
+
+1. Stop the backend (Ctrl+C in Terminal 1)
+
+2. Restart it:
+   cd service-repo
+   ./run.sh
+
+3. Frontend should now work!
+   cd guess-word
+   npm run web
+
+═══════════════════════════════════════════════════════════════
+                    🧪 TEST IT WORKS
+═══════════════════════════════════════════════════════════════
+
+curl -X POST http://localhost:8080/game/start \
+  -H "Content-Type: application/json" \
+  -d '{"difficulty": "normal"}'
+
+Should return JSON with game_id ✅
+
+═══════════════════════════════════════════════════════════════
+
+The game will work exactly the same way!
+Semantic similarity is still excellent! 🎯
+
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,32 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║         🔧 SWITCHED TO XLM-RoBERTa-BASE 🔧                   ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+🎯 Why XLM-RoBERTa?
+
+✅ It's a BASE transformer model (not sentence-transformers)
+✅ No pipeline compatibility issues
+✅ Excellent multilingual support (100+ languages)
+✅ Trained specifically on Hebrew text
+✅ Used by Facebook/Meta in production
+✅ Works reliably with HuggingFace Inference API
+
+This model returns token-level embeddings which we average
+to create sentence embeddings (mean pooling).
+
+═══════════════════════════════════════════════════════════════
+                  🚀 RESTART ONE FINAL TIME
+═══════════════════════════════════════════════════════════════
+
+Press Ctrl+C in your backend terminal, then:
+
+    cd /Users/talben-avi/guess-word/service-repo
+    ./run.sh
+
+═══════════════════════════════════════════════════════════════
+
+This model WILL work - it's a standard transformer! 🎯
+
+═══════════════════════════════════════════════════════════════

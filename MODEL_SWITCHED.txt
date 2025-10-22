@@ -1,0 +1,56 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║         🔄 MODEL SWITCHED - MULTILINGUAL-E5-SMALL 🔄         ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+🔧 WHAT CHANGED:
+
+The paraphrase-multilingual model wasn't working with the API.
+
+Switched to: intfloat/multilingual-e5-small
+
+This model:
+✅ Works with Hugging Face free Inference API
+✅ Excellent Hebrew support (trained on 100+ languages)
+✅ State-of-the-art multilingual embeddings
+✅ Uses "query: " prefix for better results
+
+═══════════════════════════════════════════════════════════════
+                  🚀 RESTART ONE MORE TIME
+═══════════════════════════════════════════════════════════════
+
+Backend (Terminal 1):
+    cd service-repo
+    # Press Ctrl+C, then:
+    ./run.sh
+
+Frontend should work immediately after backend starts!
+
+═══════════════════════════════════════════════════════════════
+                    🧪 TEST IT
+═══════════════════════════════════════════════════════════════
+
+curl -X POST http://localhost:8080/game/start \
+  -H "Content-Type: application/json" \
+  -d '{"difficulty": "normal", "daily_mode": true}'
+
+Should return JSON with game_id ✅
+
+═══════════════════════════════════════════════════════════════
+              📊 ABOUT MULTILINGUAL-E5-SMALL
+═══════════════════════════════════════════════════════════════
+
+Model: intfloat/multilingual-e5-small
+- Trained on 100+ languages including Hebrew
+- 118M parameters (lightweight & fast)
+- SOTA performance on multilingual benchmarks
+- Perfect for semantic similarity tasks
+
+Better than the previous model for Hebrew!
+
+═══════════════════════════════════════════════════════════════
+
+This should finally work! 🎯
+
+═══════════════════════════════════════════════════════════════

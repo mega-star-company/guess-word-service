@@ -1,0 +1,46 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║           🔑 QUICK FIX - API KEY PERMISSIONS                 ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+❌ PROBLEM FOUND:
+Your API token doesn't have "Inference API" permission!
+
+═══════════════════════════════════════════════════════════════
+                  ✅ QUICK FIX (2 minutes)
+═══════════════════════════════════════════════════════════════
+
+1. Go to: https://huggingface.co/settings/tokens
+
+2. Click "Create new token"
+
+3. IMPORTANT - Check this box:
+   ✅ "Make calls to the serverless Inference API"
+
+4. Copy the new token (starts with hf_...)
+
+5. Run this command:
+   cd service-repo
+   echo "HUGGINGFACE_API_KEY=hf_YOUR_TOKEN_HERE" > .env
+   
+   (Replace hf_YOUR_TOKEN_HERE with your actual token)
+
+6. Restart backend:
+   ./run.sh
+
+═══════════════════════════════════════════════════════════════
+                      🧪 TEST IT WORKS
+═══════════════════════════════════════════════════════════════
+
+curl -X POST http://localhost:8080/game/start \
+  -H "Content-Type: application/json" \
+  -d '{"difficulty": "normal"}'
+
+Should return JSON with "game_id" ✅
+
+═══════════════════════════════════════════════════════════════
+
+See FIX_API_KEY.md for detailed instructions with screenshots!
+
+═══════════════════════════════════════════════════════════════

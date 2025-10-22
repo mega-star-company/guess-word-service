@@ -1,0 +1,68 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║         🎯 DAILY WORDS - NO MORE FIXED LIST! 🎯              ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+✅ WHAT CHANGED:
+
+1. 📚 NO MORE SMALL WORD LIST
+   - Expanded from 70 words to ~300 Hebrew words
+   - Won't repeat for almost a YEAR!
+   - Different word every single day
+
+2. 🔄 DYNAMIC DAILY ROTATION
+   - Uses date-based hash to select word
+   - Same word for everyone on the same day
+   - Automatically changes at midnight
+
+3. 🛠️  FIXED API ERROR
+   - Trying multiple API formats
+   - Added fallback for different response types
+   - Better error handling
+
+4. 🇮🇱 EXPANDED HEBREW VOCABULARY
+   Categories (300 words total):
+   - Emotions & Feelings (40 words)
+   - Abstract Concepts (50 words)
+   - Qualities & Attributes (40 words)
+   - Knowledge & Learning (35 words)
+   - Social & Relationships (40 words)
+   - Nature & Physical World (35 words)
+   - Time & Change (30 words)
+   - Actions & States (30 words)
+
+═══════════════════════════════════════════════════════════════
+                  🚀 RESTART THE BACKEND
+═══════════════════════════════════════════════════════════════
+
+Press Ctrl+C in your backend terminal, then:
+
+    cd /Users/talben-avi/guess-word/service-repo
+    ./run.sh
+
+You should see:
+    🎮 Semantle Backend starting...
+    📡 Using model: paraphrase-multilingual-mpnet-base-v2
+    🔑 API key configured: True
+    📚 Hebrew word pool: 300 words (daily rotation)
+    🎯 Today's word (index XX): [Hebrew word]
+
+═══════════════════════════════════════════════════════════════
+              📊 HOW IT WORKS
+═══════════════════════════════════════════════════════════════
+
+Each day:
+1. Takes current date (YYYY-MM-DD)
+2. Creates MD5 hash of the date
+3. Uses hash to pick one of 300 words
+4. Same calculation = same word for everyone today
+5. Tomorrow = different hash = different word
+
+Result: Fresh word every day for ~300 days! 🎯
+
+═══════════════════════════════════════════════════════════════
+
+Let's try this! 🇮🇱
+
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,37 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║         🔧 PIPELINE FIX - EXPLICIT FEATURE-EXTRACTION 🔧     ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+🐛 THE PROBLEM:
+
+The error "SentenceSimilarityPipeline.__call__() missing 1 required 
+positional argument: 'sentences'" means the model was trying to use 
+the wrong pipeline type.
+
+✅ THE SOLUTION:
+
+Changed from:
+  https://api-inference.huggingface.co/models/BAAI/bge-m3
+
+To:
+  https://api-inference.huggingface.co/pipeline/feature-extraction/BAAI/bge-m3
+
+This explicitly tells HuggingFace to use the feature-extraction 
+pipeline (for embeddings) instead of the sentence-similarity pipeline.
+
+═══════════════════════════════════════════════════════════════
+                  🚀 RESTART ONE MORE TIME
+═══════════════════════════════════════════════════════════════
+
+Press Ctrl+C in your backend terminal, then:
+
+    cd /Users/talben-avi/guess-word/service-repo
+    ./run.sh
+
+═══════════════════════════════════════════════════════════════
+
+This should fix the pipeline issue! 🎯
+
+═══════════════════════════════════════════════════════════════
